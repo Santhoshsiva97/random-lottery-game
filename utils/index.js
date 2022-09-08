@@ -3,7 +3,7 @@ import axios from "axios";
 export async function subgraphQuery(query) {
 
     try {
-        const SUBGRAPH_URL = "https://api.thegraph.com/subgraphs/name/santhoshsiva97/randomgame";
+        const SUBGRAPH_URL = "https://api.thegraph.com/subgraphs/name/santhoshsiva97/newrandomgame";
         const response = await axios.post(SUBGRAPH_URL, { query });
         if(response.data.errors) {
             console.error("error in axios response:::", response.data.errors);
